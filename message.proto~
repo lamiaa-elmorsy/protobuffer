@@ -1,0 +1,16 @@
+//package myprotobuf;
+option java_package = "com.lab.protobuf";
+option java_outer_classname = "Message";
+
+message Person {
+required int32 id = 1;
+required string name = 2;
+optional string email = 3;
+message PhoneNumber {
+required string number = 1;
+}
+repeated PhoneNumber phone = 4;
+}
+message AddressBook {
+repeated Person person = 1;
+}

@@ -1,0 +1,10 @@
+//package tutorial;
+//option java_package = "com.example.tutorial";
+option java_outer_classname = "Message";
+
+message Email {
+//required int32 id = 1;
+required string name = 2;
+optional string email = 3;
+}
+
